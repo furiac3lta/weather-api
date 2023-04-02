@@ -7,10 +7,10 @@ import Loading from "./components/Loading";
 function App() {
   const [latlon, setLatlon] = useState();
   const [weather, setWeather] = useState();
-  const [search, setSearch] = useState("paris");
+  const [search, setSearch] = useState();
   const [temperature, setTemperature] = useState();
 
-  console.log(weather?.weather[0])
+  console.log(weather?.weather[0]);
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ function App() {
     const error = () => {};
     navigator.geolocation.getCurrentPosition(success, error);
   }, [search]);
- 
+
   useEffect(() => {
     if (latlon) {
       const apikey = "a6f139938d4bc72a171fbf83d3bcb13b";
@@ -50,25 +50,19 @@ function App() {
   }, [latlon]);
 
   return (
-    /* ${weather?.weather[0]} */
     <div
       className="App"
-     /*  style={{ backgroundImage: "url(../assets/50d.jpg)" }} */
       style={{
-        backgroundImage: 
-        `url(../assets/${weather?.weather[0].icon}.jpg)`}}
-      /*   style={{
-          backgroundImage: 
-          `url(/src/images/background/${weather?.weather[0].icon}.jpg)`}}  */
+        backgroundImage: `url(../assets/${weather?.weather[0].icon}.jpg)`,
+      }}
     >
-    
       {weather ? (
         <>
           <div className="contain">
             {/* {" "} */}
             <h1 className="title">Wheather app</h1>
             <form onSubmit={handleSearch} action="">
-              <input id="input" type="text" autoComplete= "off"/>
+              <input id="input" type="text" autoComplete="off" />
               <button>search</button>
             </form>
             <WeatherCard weather={weather} temperature={temperature} />
