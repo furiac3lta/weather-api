@@ -14,7 +14,7 @@ console.log(weather?.weather[0].icon)
         <header>
           <img
            /*  src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} */
-           src={`../${weather?.weather[0].icon}.svg`}
+           src={`../assets/${weather?.weather[0].icon}.svg`}
            alt=""
           />
         
