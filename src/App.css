@@ -41,7 +41,7 @@
   font-size: 36px;
 }
 button {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   padding: 0.5rem 1rem;
   border-radius: 28px;
   background-color: rgba(24, 195, 248, 0.7);
@@ -77,29 +77,41 @@ header {
 .temp {
   font-size: 36px;
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 520px)  {
+  
   input {
-    padding: 0.3rem;
+ width: 35vw;
   }
   .contain {
-    width: 58vw;
-    height: 55vh;
-    line-height: 2;
+    width: 40vw;
+    height: 40vh;
+    line-height: 1.8;
   }
   .title {
-    font-size: 24px;
+    font-size: 18px;
+  }
+  .temp{
+    padding-top: 1rem;
+    font-size: x-large;
   }
   form {
     display: flex;
     margin-left: 3px;
   }
-  form button {
-    margin-left: 3px;
+  button{
+    font-size: small;
   }
   h3 {
-    font-size: medium;
+    font-size: 13px;
+  }
+  h2{
+    padding-top: 1rem;
+    font-size: 14px;
   }
   ul {
     width: 90%;
+    font-size: 14px;
   }
+
+ 
 }
