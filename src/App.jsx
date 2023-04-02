@@ -7,7 +7,7 @@ import Loading from "./components/Loading";
 function App() {
   const [latlon, setLatlon] = useState();
   const [weather, setWeather] = useState();
-  const [search, setSearch] = useState();
+  const [search, setSearch] = useState("rio gallegos");
   const [temperature, setTemperature] = useState();
 
   console.log(weather?.weather[0]);
