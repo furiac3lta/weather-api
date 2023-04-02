@@ -53,7 +53,7 @@ function App() {
     /* ${weather?.weather[0]} */
     <div
       className="App"
-      style={{ backgroundImage: "url(/public/static/50d.jpg)" }}
+      style={{ backgroundImage: "url(/public/50d.jpg)" }}
      /*  style={{
         backgroundImage: 
         `url(/public/assets/${weather?.weather[0].icon}.jpg)`}} */
