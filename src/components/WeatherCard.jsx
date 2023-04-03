@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 const WeatherCard = ({ weather, temperature }) => {
-  console.log(weather);
+ 
   const [isCelsius, setIsCelsius] = useState(true);
   const handleChangeT = () => setIsCelsius(!isCelsius);
-console.log(weather?.weather[0].icon)
+
   return (
     <article>
       <h2>

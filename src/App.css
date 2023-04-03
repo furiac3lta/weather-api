@@ -19,7 +19,7 @@
   width: 100vw;
   min-height: 100vh;
   font-family: "Lato", sans-serif;
-  transition: all 0.9s ease ;
+  transition: all 0.9s ease;
 }
 .contain {
   padding: 1rem 5rem;
@@ -77,10 +77,14 @@ header {
 .temp {
   font-size: 36px;
 }
-@media only screen and (max-width: 520px)  {
-  
+svg {
+  width:150% ;
+  height:150% ;
+}
+
+@media only screen and (max-width: 520px) {
   input {
- width: 35vw;
+    width: 35vw;
   }
   .contain {
     width: 45vw;
@@ -90,7 +94,7 @@ header {
   .title {
     font-size: 18px;
   }
-  .temp{
+  .temp {
     padding-top: 1rem;
     font-size: x-large;
   }
@@ -98,13 +102,13 @@ header {
     display: flex;
     margin-left: 3px;
   }
-  button{
+  button {
     font-size: small;
   }
   h3 {
     font-size: 13px;
   }
-  h2{
+  h2 {
     padding-top: 1rem;
     font-size: 14px;
   }
@@ -112,11 +116,9 @@ header {
     width: 90%;
     font-size: 14px;
   }
-
- 
 }
 @media only screen and (max-width: 375px) {
-.contain{
-  height: 63vh;
-}
+  .contain {
+    height: 63vh;
+  }
 }

@@ -10,13 +10,13 @@ function App() {
   const [search, setSearch] = useState("rio gallegos");
   const [temperature, setTemperature] = useState();
 
-  console.log(weather?.weather[0]);
 
   const handleSearch = (e) => {
     e.preventDefault();
     setSearch(e.target.input.value.toLowerCase().trim());
     e.target.input.value = "";
   };
+  
   const handleLang = (e) => {
     setLang("es");
   };
@@ -60,7 +60,7 @@ function App() {
         <>
           <div className="contain">
             {/* {" "} */}
-            <h1 className="title">Wheather app</h1>
+            <h1 className="title">Weather App</h1>
             <form onSubmit={handleSearch} action="">
               <input id="input" type="text" autoComplete="off" />
               <button>search</button>
