@@ -5,6 +5,7 @@
 }
 .loading {
   font-size: 24px;
+  color: rgba(52, 152, 219, 0.8);
 }
 .App {
   margin-top: 0;
