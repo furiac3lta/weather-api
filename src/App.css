@@ -129,6 +129,6 @@ svg {
 }
 @media only screen and (max-width: 375px) {
   .contain {
-    height: 63vh;
+    height: 67vh;
   }
 }
