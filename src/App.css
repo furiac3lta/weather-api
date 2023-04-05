@@ -21,7 +21,17 @@
   font-family: "Lato", sans-serif;
   transition: all 0.9s ease;
 }
+.error{
+  padding: 0.5rem 1rem;
+  border-radius: 28px;
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(44, 62, 80, 0.4)
+  
+}
 .contain {
+  margin-top: 1rem;
   padding: 1rem 5rem;
   flex-direction: column;
   background-color: rgba(158, 163, 163, 0.4);

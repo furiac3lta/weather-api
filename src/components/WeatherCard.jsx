@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import "animate.css";
 
 const WeatherCard = ({ weather, temperature }) => {
- 
   const [isCelsius, setIsCelsius] = useState(true);
   const handleChangeT = () => setIsCelsius(!isCelsius);
 
@@ -12,12 +12,7 @@ const WeatherCard = ({ weather, temperature }) => {
       </h2>
       <section>
         <header>
-          <img
-           /*  src={`https://openweathermap.org/img/wn/${weather?.weather[0].icon}@4x.png`} */
-           src={`../assets/${weather?.weather[0].icon}.svg`}
-           alt=""
-          />
-        
+          <img className="animate__animated animate__flip animate__infinite	infinite animate__slow" src={`../assets/${weather?.weather[0].icon}.svg`} alt="" />
         </header>
         <article>
           <h1>{}</h1>
@@ -51,7 +46,9 @@ const WeatherCard = ({ weather, temperature }) => {
               ? `${temperature?.celsius} ºC`
               : `${temperature?.farenheit} ºF`}
           </h2>
-          <button onClick={handleChangeT}>Change to {isCelsius ? `ºF` : `ºC`}</button>
+          <button onClick={handleChangeT}>
+            Change to {isCelsius ? `ºF` : `ºC`}
+          </button>
         </footer>
       </section>
     </article>
